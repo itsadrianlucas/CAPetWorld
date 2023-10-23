@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="imgs/favicon.png">
+    <title>Pets World - Adopt a friendly companiers</title>
+</head>
+<body>
+    <div>
+        <a href="index.html">
+            <img id="logo-image" src="imgs/logo.png" alt="branch-logo"/>
+        </a>
+    </div>
+
+    <div id="container">
+        <div>
+            <h1>Pet's World</h1>
+            <h2>Adopt a friendly companiers</h2>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="navbar">
+        <ul>
+            <li>
+               <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="page2.html">Available pets</a>
+            </li>
+            <li>
+                <a href="page3.html">Adopt a pet</a>
+            </li>
+        </ul>
+    </div>
+    <main>
+        <div>
+            <h4>Pet adoption form</h4>
+        </div>
+
+        <form>
+            <label>Your Name</label><br>
+            <input type="text" minlength="3" maxlength="20" required><br><br>
+
+            <label>Your phone number</label><br>
+            <input type="tel" id="fphone" maxlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="000000000 (no symbols)" required/><br><br>
+
+            <label>Your Email</label><br>
+            <input type="email" id="femail" placeholder="Address@domain"  required><br><br>
+
+            <span>How do you like to contact you?</span><br>
+            <label>Phone</label>
+            <input type="radio" value="phone">
+
+            <label>Email</label>
+            <input type="radio" value="Email"><br><br>
+
+            <label>Your desired pet</label><br>
+
+                <select id="pets" name="petsdragdown">
+                    <option value="Tigr">Tigr</option>
+                    <option value="Fluffy">Fluffy</option>
+                    <option value="Micky">Micky</option>
+                    <option value="Ringo">Ringo</option>
+                </select><br><br>
+
+            <label>Do you need leave us any additional commentary?</label><br><br>
+            <textarea name="comment"></textarea><br><br>
+
+            <input type="checkbox" id="tec" name="tec" value="AgreedTerms">
+            <label> I agree to your T & C</label><br>
+
+            <input type="checkbox" id="news" name="news" value="AgreedNewsletter">
+            <label> I want to subscribe to your monthly newsletter</label><br><br>
+
+            <input id="imgpaw" type="image" src="imgs/paw.png" alt="submit-paw-logo"/>   
+        </form>
+    </main>
+    <hr>
+    <footer>    
+        <p>All rights reserved &#169;XMLCV</p>
+    </footer>
+</body>
+</html>
